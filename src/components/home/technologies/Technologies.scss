@@ -1,0 +1,86 @@
+@import "../../../App.scss";
+
+.technologies {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    height: 70rem;
+    width: 120rem;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include respond(tab-land) {
+        width: 100rem;
+    }
+    @include respond(tab-port) {
+        top: 160%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 120rem;
+        width: 53rem;
+    }
+    @include respond(phone) {
+        width: 38rem;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 45rem;
+        box-shadow: 0rem 1.5rem 4rem black;
+        height: 60rem;
+        @include respond(phone) {
+            width: 40rem;
+        }
+    }
+    &__title {
+        font-family: "Montserrat";
+        color: $color-slate-lightest;
+        font-size: 2.4rem;
+        font-weight: 700;
+        background-position: top;
+    }
+    &__text{
+        font-family: "Oxanium";
+        color: $color-slate;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.6;
+    }
+    &__introduction {
+        font-size: 1.5rem;
+        color: $color-slate-light;
+        font-family: "Montserrat";
+    }
+    &__image {
+        height: 50rem;
+        background-size: cover;
+        border-radius: .5rem;
+        box-shadow: 0rem 1rem 3rem black;
+        @include respond(tab-land) {
+            height: 40rem;
+        }
+        @include respond(phone) {
+            height: 38rem;
+        }
+    }
+
+    &__technology {
+        width: 30rem;
+        height: 30rem;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: space-between;
+        &__tech {
+            font-family: "Oxanium";
+            font-size: 1.5rem;
+            color: $color-green;
+            width: 10.5rem;
+        }
+    }
+}

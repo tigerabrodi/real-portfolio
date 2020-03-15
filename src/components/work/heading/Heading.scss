@@ -1,0 +1,33 @@
+@import "../../../App.scss";
+
+
+.heading {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15rem;
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    @include respond(tab-port) {
+        left: 51%;
+        width: 50rem;
+    }
+    @include respond(phone) {
+        left: 50%;
+        width: 40rem;
+    }
+    &__title {
+        font-family: "Montserrat";
+        color: $color-slate-lightest;
+        font-size: 3.5rem;
+        font-weight: 800;
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "../../../App.scss";
+
+.project {
+    height: 55rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: .1rem solid $color-green;
+    transition: all .3s;
+    @include respond(tab-land) {
+        width: 40rem;
+    }
+    @include respond(tab-port) {
+        width: 50rem;
+        margin: 1rem 0rem;
+    }
+    @include respond(phone) {
+        width: 38rem;
+    }
+    @media screen and (max-width: 23.12em) {
+        width: 32rem;
+    }
+    &:hover {
+        background-color: rgba($color-green, 0.1);
+        transform: scale(1.1);
+        @include respond(tab-port) {
+            transform: scale(1);
+        }
+    }
+
+    &__image {
+        height: 25rem;
+        box-shadow: 0rem 1rem 1rem black;
+        border: .1rem solid $color-primary-light;
+        border-radius: 1%;
+        @include respond(tab-land) {
+            height: 20rem;
+        }
+        @media screen and (max-width: 23.12em) {
+            height: 15rem;
+        }
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-size: 2rem;
+        color: $color-slate-light;
+    }
+
+    &__description {
+        text-align: center;
+        font-family: "Oxanium";
+        font-size: 1.5rem;
+        color: $color-slate;
+        line-height: 1.5;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20rem;
+        height: 5rem;
+        &__link {
+            &,
+            &:link,
+            &:visited,
+            &:focus,
+            &:active {
+                padding: 1rem 2rem;
+                font-family: "Oxanium";
+                font-size: 1.3rem;
+                text-decoration: none;
+                font-weight: 700;
+                outline: none;
+                transition: all .4s;
+                border-radius: 4%;
+                &:hover {
+                color: black;
+                }
+            }
+            &-web {
+                border: .1rem solid lightblue;
+                color: lightblue;
+                &:hover{
+                    background-color: $color-green;
+                }
+            }
+            &-git {
+                border: .1rem solid $color-green;
+                color: $color-green;
+                &:hover {
+                    background-color: lightblue;
+                }
+            }
+        }
+    }
+}

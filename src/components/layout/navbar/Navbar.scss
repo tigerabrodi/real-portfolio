@@ -1,0 +1,130 @@
+@import "../../../App.scss";
+
+.navigation {
+    height: 11vh;
+    width: 100%;
+    box-shadow: 0rem .6rem 2rem black;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    position: fixed;
+    z-index: 50;
+    &__checkbox {
+        display: none;
+    }
+    &__background {
+        position: absolute;
+        border-radius: 100%;
+        right: 5rem;
+        height: .5rem;
+        width: .5rem;
+        background-color: $color-primary-light;
+        opacity: 1;
+        transition: all .5s;
+    }
+    &__list {
+        width: 30%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: all .4s;
+        @include respond(tab-port) {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            right: -50rem;
+            z-index: 10;
+            opacity: 1;
+        }
+    }
+    &__item,
+    &__item:link
+    &__item:visited {
+        color: $color-slate-lightest;
+        text-decoration: none;
+        font-family: "Oxanium";
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+        transition: all .25s;
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+            letter-spacing: .2rem;
+            font-family: 800;
+        }
+        &:hover {
+            color: $color-green;
+            transform: translateY(-.1rem) scale(1.2);
+            text-shadow: 0rem .1rem 5rem black;
+            font-weight: 600;
+        }
+    }
+    &__hamburger {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+        @include respond(tab-port) {
+            opacity: 1;
+            z-index: 20;
+            position: relative;
+            visibility: visible;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 4vh;
+            width: 11vh;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover &__line {
+                background-color: $color-green;
+                transform: scale(1.2);
+            }
+            &__line {
+            height: 3px;
+            width: 30px;
+            box-shadow: 0rem .04rem .3rem $color-slate-lightest;
+            background-color: $color-slate-lightest;
+            transition: all .3s;
+            }
+
+        }
+    }
+
+
+    &__checkbox:checked ~ &__hamburger &__hamburger__line-2 {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    &__checkbox:checked ~ &__hamburger &__hamburger__line-1 {
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+
+    &__checkbox:checked ~ &__hamburger &__hamburger__line-3 {
+        position: absolute;
+        transform: rotate(40deg);
+    }
+
+    &__checkbox:checked ~ &__list {
+        @include absCenter;
+        border-radius: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(600);
+        border-radius: 100%;
+    }
+
+    &__checkbox:checked ~ &__list &__item {
+        animation: moveInLeft .8s ease-in-out;
+    }
+}

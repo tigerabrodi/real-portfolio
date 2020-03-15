@@ -1,0 +1,75 @@
+@import "../../../App.scss";
+.header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: fadeUp .5s ease-out;
+    @include respond(phone) {
+        left: 54%;
+    }
+    &__heading {
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        &__span {
+            color: $color-green;
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: "Oxanium";
+        }
+
+        &__title {
+            color: $color-slate-lightest;
+            font-family: "Montserrat";
+            font-size: 6rem;
+        }
+        &__subtitle {
+            font-size: 5rem;
+            font-family: "Montserrat";
+            color: $color-slate;
+        }
+    }
+    &__paragraph {
+        width: 39rem;
+        height: 4rem;
+        &__text {
+            font-family: 'Oxanium';
+            font-weight: 400;
+            color: $color-slate;
+            font-size: 1.5rem;
+            line-height: 1.4;
+        }
+    }
+    &__button {
+        &:link,
+        &:visited,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            outline: none;
+            padding: 1.2rem 2.3rem;
+            border: .1rem solid $color-green;
+            font-family: "Oxanium";
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: $color-green;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-green 50%);
+            background-size: 220%;
+            transition: all .4s;
+        }
+        &:hover {
+            background-position: 100%;
+            color: $color-primary;
+            box-shadow: 0rem .1rem .5rem black;
+        }
+    }
+}

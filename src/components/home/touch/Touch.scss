@@ -1,0 +1,55 @@
+@import "../../../App.scss";
+
+.touch {
+    height: 40rem;
+    width: 45rem;
+    position: absolute;
+    top: 230%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8rem;
+    @include respond(phone) {
+        width: 35rem;
+    }
+    @include respond(tab-port) {
+        top: 250%;
+    }
+    &__heading {
+        font-family: "Montserrat";
+        font-size: 4rem;
+        color: $color-slate-lightest;
+        font-weight: 800;
+    }
+    &__text {
+        font-family: "Oxanium";
+        font-size: 2rem;
+        color: $color-slate;
+        text-align: center;
+    }
+    &__button {
+        &,
+        &:link,
+        &:visited,
+        &:focus,
+        &:active {
+            outline: none;
+            text-decoration: none;
+            color: $color-green;
+            padding: 1.5rem 3.2rem;
+            font-size: 1.4rem;
+            font-family: "Oxanium";
+            transition: all .3s;
+            border-radius: 10%;
+            border: .1rem solid $color-green;
+            &:hover {
+                background-color: rgba($color-green, 0.1);
+
+            }
+        }
+        
+    }
+}
