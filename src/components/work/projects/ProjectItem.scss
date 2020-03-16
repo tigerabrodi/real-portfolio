@@ -11,6 +11,7 @@
     justify-content: space-around;
     border: .1rem solid $color-green;
     transition: all .3s;
+    overflow: hidden;
     @include respond(tab-land) {
         width: 40rem;
     }
@@ -27,6 +28,7 @@
     &:hover {
         background-color: rgba($color-green, 0.1);
         transform: scale(1.1);
+        overflow: hidden;
         @include respond(tab-port) {
             transform: scale(1);
         }

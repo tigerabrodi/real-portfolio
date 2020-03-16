@@ -1,8 +1,9 @@
-import ledgeaskImage from "../../../assets/ledgeask.png"
-import elanceImage from "../../../assets/elance.png"
-import ebuyImage from "../../../assets/ebuy.png"
-import grandburgerImage from "../../../assets/grandburger.png"
-import githubImage from "../../../assets/githubfinder.png"
+import ledgeaskImage from "../../../assets/ledgeaskgif.gif"
+import elanceImage from "../../../assets/elancegif.gif"
+import ebuyImage from "../../../assets/ebuygif.gif"
+import grandburgerImage from "../../../assets/grandburgergif.gif"
+import githubImage from "../../../assets/githubgif.gif"
+import moviegif from "../../../assets/movieapigif.gif"
 export const ProjectsArray = [
     {
         id: 1,
@@ -44,5 +45,13 @@ export const ProjectsArray = [
         description: "Github Finder is an app that allows visitors to search for github users. After searching you can view a single user and find information about him aswell as 30 repositories from him. This project was created using React, Redux & Bulma",
         website: "https://tigex-github-users.netlify.com/",
         github: "https://github.com/tigerabrodi/github-finder"
+    },
+    {
+        id: 6,
+        title: "Movify",
+        image: moviegif,
+        description: "Movify is a website where you can search for movies, and also view a single movie. For this website I used react solely with scss, my goal is to focus on passing props around and learning how to lift up the state.",
+        website: "https://movie-movify.netlify.com/",
+        github: "https://github.com/tigerabrodi/movify"
     },
 ]
