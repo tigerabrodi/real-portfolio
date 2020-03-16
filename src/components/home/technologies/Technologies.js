@@ -19,7 +19,6 @@ const Technologies = () => {
                     <li className="technologies__technology__tech">HTML</li>
                     <li className="technologies__technology__tech">(S)CSS</li>
                     <li className="technologies__technology__tech">Redux</li>
-                    <li className="technologies__technology__tech">Firebase</li>
                     <li className="technologies__technology__tech">Bootstrap</li>
                 </div>
             </div>
