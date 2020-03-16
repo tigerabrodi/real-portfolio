@@ -8,7 +8,7 @@ export const ProjectsArray = [
         id: 1,
         title: "LedgeAsk",
         image: ledgeaskImage,
-        description: "LedgeAsk is a platform where users can ask business and technology related questions, get their questions upvoted aswell as answered from other individuals. I used React, Redux, CSS and a little bit of Bootstrap for the Front-End and for the Back-End I used NodeJS, Express, Mongoose and MongoDB.",
+        description: "LedgeAsk is a platform where users can ask business and technology related questions, get their questions upvoted aswell as answered from other individuals. I used React, Redux, CSS and a little bit of Bootstrap for the Front-End and for the Back-End I used NodeJS, Express, Mongoose and MongoDB. There are some issues with image uploading in production, since I did not use a 3rd party storage, like AWS S3.",
         website: "https://ledgeask.herokuapp.com/",
         github: "https://github.com/tigerabrodi/Ledge-Ask"
 
@@ -17,7 +17,7 @@ export const ProjectsArray = [
         id: 2,
         title: "eBuy",
         image: ebuyImage,
-        description: "eBuy is a marketplatform for where users can put their items to sale but also purchase other items after being authenticated. I used React, Redux and Bootstrap for the Front-End and for the Back-End I used NodeJS, Express, Mongoose and MongoDB.",
+        description: "eBuy is a marketplatform for where users can put their items to sale but also purchase other items after being authenticated. I used React, Redux and Bootstrap for the Front-End and for the Back-End I used NodeJS, Express, Mongoose and MongoDB. There are some issues with image uploading in production, since I did not use a 3rd party storage, like AWS S3.",
         website: "https://ebuy-abrodi.herokuapp.com/",
         github: "https://github.com/tigerabrodi/eBuy"
     },
@@ -33,7 +33,7 @@ export const ProjectsArray = [
         id: 4,
         title: "ELance",
         image: elanceImage,
-        description: "ELance is a platform for freelancers to connect with each other, share ideas and collaborate. Users can add previous work experience, education and an image to their profile, post different discussions and also comment on the posts. I used React, Redux and Bootstrap for the Front-End and for the Back-End I used NodeJS, Express, Mongoose and MongoDB.",
+        description: "ELance is a platform for freelancers to connect with each other, share ideas and collaborate. Users can add previous work experience, education and an image to their profile, post different discussions and also comment on the posts. I used React, Redux and Bootstrap for the Front-End and for the Back-End I used NodeJS, Express, Mongoose and MongoDB. There are some issues with image uploading in production, since I did not use a 3rd party storage, like AWS S3.",
         website: "http://elance-abrodi.herokuapp.com/",
         github: "https://github.com/tigerabrodi/ELance"
     },
