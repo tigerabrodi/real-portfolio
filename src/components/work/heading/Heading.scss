@@ -15,7 +15,6 @@
         width: 50rem;
     }
     @include respond(phone) {
-        left: 50%;
         width: 40rem;
     }
     &__title {

@@ -12,6 +12,8 @@
     top: 105%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+
     @include respond(tab-land){
         width: 100rem;
     }
@@ -23,21 +25,13 @@
         align-items: center;
         width: 50rem;
         height: auto;
-        top: 175%;
+        top: 200%;
     }
 
     @include respond(phone) {
-        width: 40rem;
-        top: 170%;
+        width: 35rem;
+        top: 195%;
         margin-top: 5rem;
-    }
-
-    @media only screen and (max-height: 48.56em) {
-        top: 155%;
-    }
-
-    @media only screen and (max-height: 44.8em) {
-        top: 175%;
     }
 
 

@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./ProjectItem.scss"
 
 
 
-const ProjectItem = ({project: {title, description, github, website, image}}) => {
+const ProjectItem = ({project: {title, description, github, website, image, onHover}}) => {
+
+    const [hover, setHover] = useState(false);
+
     return (
-        <div className="project">
-            <img className="project__image" src={image} alt="project"/>
+        <div className="project" onMouseLeave={() => setHover(false)} onMouseEnter={() => setHover(true)}>
+            <img className="project__image" src={hover ? onHover : image} alt="project"/>
             <h1 className="project__title"> {title} </h1>
             <p className="project__description">{description}</p>
             <div className="project__buttons">
