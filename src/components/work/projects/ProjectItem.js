@@ -8,7 +8,7 @@ const ProjectItem = ({project: {title, description, github, website, image, onHo
     const [hover, setHover] = useState(false);
 
     return (
-        <div className="project" onMouseLeave={() => setHover(!hover)} onMouseEnter={() => setHover(!hover)}>
+        <div className="project" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
             <img className="project__image" src={hover ? onHover : image} alt="project"/>
             <h1 className="project__title"> {title} </h1>
             <p className="project__description">{description}</p>
