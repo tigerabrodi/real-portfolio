@@ -10,6 +10,9 @@ import ledgeaskImage from "../../../assets/ledgeask.png"
 import ebuyImage from "../../../assets/ebuy.png"
 import elanceImage from "../../../assets/elance.png"
 import movieImage from "../../../assets/movify.png"
+import coronaImage from "../../../assets/corona-image.png"
+import coronaGif from "../../../assets/coronagif.gif"
+
 export const ProjectsArray = [
     {
         id: 1,
@@ -32,6 +35,15 @@ export const ProjectsArray = [
     },
     {
         id: 3,
+        title: "Corona Pro",
+        image: coronaImage,
+        onHover: coronaGif,
+        description: "Corona Pro is a website that informs you about the Coronavirus, how you should protect yourself and also some general information. This website was heavily focused on making the User Interface look beautiful but also being informative.",
+        website: "https://coronapro.netlify.com/",
+        github: "https://github.com/tigerabrodi/Corona-Pro"
+    },
+    {
+        id: 4,
         title: "Grand Burger",
         image: grandburgerImage,
         onHover: grandburgerImageGif,
@@ -40,7 +52,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/Grand-Burger"
     },
     {
-        id: 4,
+        id: 5,
         title: "ELance",
         image: elanceImage,
         onHover: elanceImageGif,
@@ -49,7 +61,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/ELance"
     },
     {
-        id: 5,
+        id: 6,
         title: "Github Finder",
         image: githubImage,
         onHover: githubImageGif,
@@ -58,7 +70,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/github-finder"
     },
     {
-        id: 6,
+        id: 7,
         title: "Movify",
         image: movieImage,
         onHover: movieImageGif,
