@@ -5,7 +5,7 @@ import "./Technologies.scss"
 
 const Technologies = () => {
     return (
-        <section className="technologies">
+        <section className="technologies" data-aos="fade-up-right" data-aos-duration="1300">
         <div className="technologies__wrapper">
             <div className="technologies__box">
                 <h1 className="technologies__title">About Me</h1>

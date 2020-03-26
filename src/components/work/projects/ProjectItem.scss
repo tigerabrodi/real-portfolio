@@ -10,7 +10,6 @@
     justify-content: space-around;
     border: .1rem solid $color-green;
     transition: all .3s;
-    overflow: hidden;
 
     @include respond(tab-port) {
         height: 12%;
@@ -27,6 +26,7 @@
         box-shadow: 0rem 1rem 1rem black;
         border: .1rem solid $color-primary-light;
         border-radius: 1%;
+        overflow: hidden;
     }
 
     &__title {

@@ -17,9 +17,9 @@ const Navbar = () => {
             <div className="navigation__background"></div>
 
             <ul className="navigation__list">
-                <Link to="/" className="navigation__item" onClick={() => unCheck()}>Home</Link>
-                <Link to="/work" className="navigation__item" onClick={() => unCheck()}>Work</Link>
-                <Link to="/contact" className="navigation__item" onClick={() => unCheck()}>Contact</Link>
+                <Link to="/" className="navigation__item navigation__item--1" onClick={() => unCheck()}>Home</Link>
+                <Link to="/work" className="navigation__item navigation__item--2" onClick={() => unCheck()}>Work</Link>
+                <Link to="/contact" className="navigation__item navigation__item--3" onClick={() => unCheck()}>Contact</Link>
             </ul>
 
         <label htmlFor="navi-toggle" className="navigation__hamburger">

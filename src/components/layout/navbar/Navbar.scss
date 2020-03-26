@@ -51,6 +51,7 @@
         font-size: 1.4rem;
         letter-spacing: .1rem;
         transition: all .25s;
+        animation: fadeNavOne .5s ease-in-out;
         @include respond(tab-port) {
             font-size: 2.5rem;
             letter-spacing: .2rem;

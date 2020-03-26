@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <section className="header">
+        <section className="header" data-aos="fade-down" data-aos-duration="1200">
         <div className="header__wrapper">
             <div className="header__heading">
                 <span className="header__heading__span">Hi, my name is</span>
