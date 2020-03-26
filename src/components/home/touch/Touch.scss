@@ -1,22 +1,24 @@
 @import "../../../App.scss";
 
 .touch {
-    height: 40rem;
-    width: 45rem;
-    position: absolute;
-    top: 230%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    height: 50vh;
+    margin-top: 15rem;
+
     margin-bottom: 8rem;
-    @include respond(phone) {
-        width: 35rem;
-    }
-    @include respond(tab-port) {
-        top: 250%;
+    &__wrapper {
+        height: 95%;
+        width: 45%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        @include respond(phone) {
+            width: 85%;
+        }
     }
     &__heading {
         font-family: "Montserrat";

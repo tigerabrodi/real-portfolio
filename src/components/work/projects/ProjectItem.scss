@@ -1,10 +1,9 @@
 @import "../../../App.scss";
 
 .project {
-    height: 55rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 50rem;
+    position: relative;
+    width: 42%;
+    height: 24%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,39 +11,22 @@
     border: .1rem solid $color-green;
     transition: all .3s;
     overflow: hidden;
-    @include respond(tab-land) {
-        width: 40rem;
-    }
+
     @include respond(tab-port) {
-        width: 50rem;
-        margin: 1rem 0rem;
+        height: 12%;
+        width: 80%;
     }
-    @include respond(phone) {
-        width: 38rem;
-    }
-    @media screen and (max-width: 23.12em) {
-        width: 32rem;
-    }
+
     &:hover {
         background-color: rgba($color-green, 0.1);
-        transform: scale(1.1);
-        overflow: hidden;
-        @include respond(tab-port) {
-            transform: scale(1);
-        }
+        transform: scale(1.02);
     }
 
     &__image {
-        height: 25rem;
+        width: 95%;
         box-shadow: 0rem 1rem 1rem black;
         border: .1rem solid $color-primary-light;
         border-radius: 1%;
-        @include respond(tab-land) {
-            height: 20rem;
-        }
-        @media screen and (max-width: 23.12em) {
-            height: 15rem;
-        }
     }
 
     &__title {
@@ -61,6 +43,10 @@
         color: $color-slate;
         line-height: 1.5;
         padding: 0rem 2rem;
+        @include respond(phone) {
+            height: 15rem;
+            overflow: auto;
+        }
     }
 
     &__buttons {

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <section className="header">
+        <div className="header__wrapper">
             <div className="header__heading">
                 <span className="header__heading__span">Hi, my name is</span>
                 <h1 className="header__heading__title">Tiger Abrodi.</h1>
@@ -15,6 +16,7 @@ const Header = () => {
                         <p className="header__paragraph__text">I'm a Fullstack Javascript Developer based in Germany. My passion lies in creating beautiful User Interfaces & making the User Experience great.</p>
             </div>
             <Link to="/work" className="header__button">See My Work</Link>
+        </div>
         </section>
     );
 }

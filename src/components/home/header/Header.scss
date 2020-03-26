@@ -1,21 +1,27 @@
 @import "../../../App.scss";
 .header {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 50vh;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    animation: fadeUp .5s ease-out;
-    @include respond(phone) {
-        left: 54%;
+    height: 100vh;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        height: 65vh;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 70%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        @include respond(phone) {
+            left: 52%;
+            top: 55%;
+            width: 90%;
+        }
     }
     &__heading {
-        height: 10rem;
+        height: 40%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -40,13 +46,15 @@
     }
     &__paragraph {
         width: 39rem;
-        height: 4rem;
         &__text {
             font-family: 'Oxanium';
             font-weight: 400;
             color: $color-slate;
             font-size: 1.5rem;
             line-height: 1.4;
+        }
+        @include respond(phone) {
+            width: 70%;
         }
     }
     &__button {
