@@ -9,7 +9,7 @@ const Technologies = () => {
         <div className="technologies__wrapper">
             <div className="technologies__box">
                 <h1 className="technologies__title">About Me</h1>
-                <p className="technologies__text">Hello! I'm Tiger, a software developer based in Germany, North Rhine-Westphalia who enjoys building beautiful things that makes people life easier. I love learning new technologies and digging deep into complex topics. I am currently learning Angular. After that, next step would be to to dig deeper into Javascript and learn some advanced topics. Languages I am also interested in learning in the upcoming future are Java & C++.</p>
+                <p className="technologies__text">Hello! I'm Tiger, a software developer based in Germany, North Rhine-Westphalia who enjoys building beautiful things that makes people life easier. I love learning new technologies and digging deep into complex topics. I am currently learning Angular. After that, next step would be to to dig deeper into Javascript and learn some advanced topics. Few things I wanna learn in the future are Java, Dart & Flutter and C++. I would also love to dig deeper into Algorithms & Data Structures and take part in competitions. </p>
                 <p className="technologies__introduction">Here are technologies I've worked with: </p>
                 <div className="technologies__technology">
                     <li className="technologies__technology__tech">React</li>
