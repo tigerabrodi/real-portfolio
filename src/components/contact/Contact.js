@@ -28,7 +28,7 @@ const Contact = () => {
         <section className="contact">
         <div className="contact__wrapper">
             <h1 className="contact__title">Get In Touch</h1>
-            <p className="contact__text">I am currently looking for a part-time remote position. My inbox is always open, feel free to ask me anything, I'll try my best to answer your email!</p>
+            <p className="contact__text">My inbox is always open, feel free to ask me anything, I'll try my best to answer your email!</p>
             <form
             onSubmit={(ev) => submitForm(ev)}
             action="https://formspree.io/xpzlwkpr"
