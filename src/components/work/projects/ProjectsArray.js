@@ -12,10 +12,22 @@ import elanceImage from "../../../assets/elance.png"
 import movieImage from "../../../assets/movify.png"
 import coronaImage from "../../../assets/corona-image.png"
 import coronaGif from "../../../assets/coronagif.gif"
+import rezipeImage from "../../../assets/rezipe.png";
+import rezipeGif from "../../../assets/rezipegif.gif";
 
 export const ProjectsArray = [
+        {
+            id: 1,
+            title: "Rezipe",
+            image: rezipeImage,
+            onHover: rezipeGif,
+            description: "Rezipe is a website that allows you to search for recipes based on name & calories as well as adding them into your dashboard. When it comes to storing the recipes that you've added, I used localStorage. This app was created with Angular, for styling I used (S)CSS and deployed it with now on Zeit. I worked with the edamam API in order to retrieve the recipes data.",
+            website: "https://rezipe.now.sh/",
+            github: "https://github.com/tigerabrodi/Rezipe"
+
+        },
     {
-        id: 1,
+        id: 2,
         title: "LedgeAsk",
         image: ledgeaskImage,
         onHover: ledgeaskImageGif,
@@ -25,7 +37,7 @@ export const ProjectsArray = [
 
     },
     {
-        id: 2,
+        id: 3,
         title: "eBuy",
         image: ebuyImage,
         onHover: ebuyImageGif,
@@ -34,7 +46,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/eBuy"
     },
     {
-        id: 3,
+        id: 4,
         title: "Corona Pro",
         image: coronaImage,
         onHover: coronaGif,
@@ -43,7 +55,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/Corona-Pro"
     },
     {
-        id: 4,
+        id: 5,
         title: "Grand Burger",
         image: grandburgerImage,
         onHover: grandburgerImageGif,
@@ -52,7 +64,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/Grand-Burger"
     },
     {
-        id: 5,
+        id: 6,
         title: "ELance",
         image: elanceImage,
         onHover: elanceImageGif,
@@ -61,7 +73,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/ELance"
     },
     {
-        id: 6,
+        id: 7,
         title: "Github Finder",
         image: githubImage,
         onHover: githubImageGif,
@@ -70,7 +82,7 @@ export const ProjectsArray = [
         github: "https://github.com/tigerabrodi/github-finder"
     },
     {
-        id: 7,
+        id: 8,
         title: "Movify",
         image: movieImage,
         onHover: movieImageGif,
