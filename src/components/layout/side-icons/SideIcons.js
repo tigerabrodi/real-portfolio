@@ -16,7 +16,6 @@ const SideIcons = () => {
                 <use href={sprite + "#icon-linkedin"}  />
             </svg>
             </a>
-
         </div>
     );
 }

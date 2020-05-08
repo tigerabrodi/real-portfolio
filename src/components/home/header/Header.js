@@ -13,7 +13,7 @@ const Header = () => {
                 <h3 className="header__heading__subtitle">I build things for the web</h3>
             </div>
             <div className="header__paragraph">
-                        <p className="header__paragraph__text">I'm a Fullstack Javascript Developer based in Germany. My passion lies in creating beautiful User Interfaces & making the User Experience great.</p>
+                        <p className="header__paragraph__text">I'm a Software Developer based in Germany. My passion lies in developing Web Applications with beautiful User Interfaces & great User Experiences.</p>
             </div>
             <Link to="/work" className="header__button">See My Work</Link>
         </div>

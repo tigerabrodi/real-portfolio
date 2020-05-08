@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 import SideIcons from './components/layout/side-icons/SideIcons';
 import Spinner from './components/layout/Spinner';
 const Work = lazy(() => import("./components/work/Work"));
-const Contact = lazy(() => import("./components/contact/Contact"));
 const Home = lazy(() => import("./components/home/Home"));
 
 AOS.init();
@@ -22,7 +21,6 @@ const App = () => {
     <Suspense fallback={<Spinner />}>
     <Route exact path="/" component={Home} />
     <Route exact path="/work" component={Work} />
-    <Route exact path="/contact" component={Contact} />
     </Suspense>
     </Switch>
     </Fragment>

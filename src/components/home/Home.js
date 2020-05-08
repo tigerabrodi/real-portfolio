@@ -5,11 +5,11 @@ import Touch from './touch/Touch';
 
 const Home = () => {
     return (
-        <Fragment>
-            <Header />
-            <Technologies />
-            <Touch />
-        </Fragment>
+      <Fragment>
+        <Header />
+        <Technologies />
+        <Touch />
+      </Fragment>
     );
 }
 

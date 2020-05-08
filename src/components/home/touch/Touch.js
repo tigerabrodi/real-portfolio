@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Touch.scss"
-import { Link } from 'react-router-dom';
 
 const Touch = () => {
     return (
@@ -8,7 +7,7 @@ const Touch = () => {
         <div className="touch__wrapper">
         <h1 className="touch__heading">Get In Touch</h1>
         <p className="touch__text">My inbox is always open, feel free to ask me anything, I'll try my best to answer your email!</p>
-        <Link to="/contact" className="touch__button">Get In Touch</Link>
+        <a href="mailto:tigerabrodi@gmail.com" className="touch__button">Get In Touch</a>
         </div>
         </div>
     );

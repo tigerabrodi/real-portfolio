@@ -78,6 +78,7 @@
                 color: lightblue;
                 &:hover{
                     background-color: $color-green;
+                    border: .2rem solid black;
                 }
             }
             &-git {
@@ -85,6 +86,7 @@
                 color: $color-green;
                 &:hover {
                     background-color: lightblue;
+                    border: .2rem solid black;
                 }
             }
         }
