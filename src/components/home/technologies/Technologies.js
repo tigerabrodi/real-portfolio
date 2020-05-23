@@ -15,7 +15,7 @@ const Technologies = () => {
             <h1 className="technologies__title">About Me</h1>
             <p className="technologies__text">
               Hello! I'm Tiger, a software developer based in Germany who enjoys building beautiful things that makes
-              people life easier. I love learning new technologies and consistently build Web Applications. 
+              people life easier. I love learning new technologies and consistently build Web Applications. I'm currently looking for a Full-Time Position as a Frontend Developer
             </p>
             <p className="technologies__introduction">
               Here are technologies I've worked with:{" "}

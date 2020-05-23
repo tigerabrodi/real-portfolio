@@ -63,6 +63,13 @@ body {
     box-sizing: border-box;
     font-weight: 400;
     background-color: $color-primary;
+      &::-webkit-scrollbar {
+    width: .8rem;
+    background-color: $color-grey-dark;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-green;
+  }
 }
 
 

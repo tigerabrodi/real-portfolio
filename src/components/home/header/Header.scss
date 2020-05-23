@@ -37,11 +37,13 @@
             color: $color-slate-lightest;
             font-family: "Montserrat";
             font-size: 6rem;
+            text-transform: capitalize;
         }
         &__subtitle {
             font-size: 5rem;
             font-family: "Montserrat";
             color: $color-slate;
+            text-transform: capitalize;
         }
     }
     &__paragraph {
